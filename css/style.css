@@ -1,0 +1,12 @@
+h3{
+    background-color: black;
+    color: darkcyan;
+    font-size: x-large;
+}
+
+pre{
+    border: darkgreen 2px solid;
+    font-size: large;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-weight: lighter;
+}
