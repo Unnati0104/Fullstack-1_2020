@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selectors</title>
     <style>
-        h2,p {
+        p {
             text-align: center;
             text-decoration: underline;
+            font-size: 18px;
         }
 
         * {
@@ -21,6 +22,19 @@
         .para1{
             text-align: left;
             border: mediumblue 2px solid;
+        }
+
+        .para2{
+            background-color: cyan;
+        }
+
+        #id-selector{
+            text-align: right;
+            color: crimson;
+        }
+
+        #id2 p{
+            border: darkgreen 2px dashed;
         }
     </style>
 </head>
@@ -41,7 +55,12 @@
     </div>
 
     <h2>4. The Class Selectors</h2>
-    <p class="para1"> You can define style rules based on the class attribute of the elements. All the elements having that class will be formatted according to the defined rule. Class can be applied on multiple tags like in this example, it is applied on both p tags.</p>
+    <p class="para1 para2"> You can define style rules based on the class attribute of the elements. All the elements having that class will be formatted according to the defined rule. Class can be applied multiple times on tags like in this example, two class is applied .</p>
     <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam libero quidem ex eos esse, reiciendis rerum dolor placeat excepturi, enim numquam! Ratione quidem mollitia eos? Velit accusantium minus maiores quo eaque nostrum. Error, architecto porro dignissimos cum magni quo doloribus!</p>
+
+    <h2 id="id2">5. The ID Selectors</h2>
+     <p id="id-selector">You can define style rules based on the id attribute of the elements. All the elements having that id will be formatted according to the defined rule.
+    </p>
+    <p>The true power of id selectors is when they are used as the foundation for descendant selectors. Id must be unique for a tag as suggested by name.</p>
 </body>
 </html>
