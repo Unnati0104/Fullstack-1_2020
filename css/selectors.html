@@ -62,5 +62,20 @@
      <p id="id-selector">You can define style rules based on the id attribute of the elements. All the elements having that id will be formatted according to the defined rule.
     </p>
     <p>The true power of id selectors is when they are used as the foundation for descendant selectors. Id must be unique for a tag as suggested by name.</p>
+
+    <h2>6. The Attribute Selectors</h2>
+    <p>You can also apply styles to HTML elements with particular attributes.</p>
+    <pre>The advantage to this method is that the element is unaffected, and the color applied only to the desired text fields.
+
+        There are following rules applied to attribute selector.
+        
+        p[lang] − Selects all paragraph elements with a lang attribute.
+        
+        p[lang="fr"] − Selects all paragraph elements whose lang attribute has a value of exactly "fr".
+        
+        p[lang~="fr"] − Selects all paragraph elements whose lang attribute contains the word "fr".
+        
+        p[lang|="en"] − Selects all paragraph elements whose lang attribute contains values that are exactly "en", or begin with "en-".
+    </pre>
 </body>
 </html>
