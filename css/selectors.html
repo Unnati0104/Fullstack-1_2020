@@ -40,6 +40,10 @@
         p[lang = "fr"]{
             background-color: blue;
         }
+
+        p > i{
+            color: crimson;
+        }
     </style>
 </head>
 <body>
@@ -84,5 +88,9 @@
         p[lang|="en"] − Selects all paragraph elements whose lang attribute contains values that are exactly "en", or begin with "en-".
     </pre>
     <p lang = "fr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi fugit error tenetur officia, harum distinctio quis modi id expedita delectus repudiandae repellendus voluptatum maiores et officiis qui culpa suscipit.</p>
+
+    <h2>7. The Child Selectors</h2>
+    <p> <i>You have seen the descendant selectors. There is one more type of selector, which is very similar to descendants but have different functionality. It applies on direct child of an element.
+    </i></p>
 </body>
 </html>
