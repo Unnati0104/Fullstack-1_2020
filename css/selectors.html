@@ -36,6 +36,10 @@
         #id2 p{
             border: darkgreen 2px dashed;
         }
+
+        p[lang = "fr"]{
+            background-color: blue;
+        }
     </style>
 </head>
 <body>
@@ -66,7 +70,7 @@
     </div>
 
     <h2>6. The Attribute Selectors</h2>
-    <p>You can also apply styles to HTML elements with particular attributes.</p>
+    <p lang = "en">You can also apply styles to HTML elements with particular attributes.</p>
     <pre>The advantage to this method is that the element is unaffected, and the color applied only to the desired text fields.
 
         There are following rules applied to attribute selector.
@@ -79,5 +83,6 @@
         
         p[lang|="en"] − Selects all paragraph elements whose lang attribute contains values that are exactly "en", or begin with "en-".
     </pre>
+    <p lang = "fr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi fugit error tenetur officia, harum distinctio quis modi id expedita delectus repudiandae repellendus voluptatum maiores et officiis qui culpa suscipit.</p>
 </body>
 </html>
