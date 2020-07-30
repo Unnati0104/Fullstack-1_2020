@@ -19,6 +19,12 @@
         width: 1000px;
         max-width: 500px;
     }
+
+    .min{
+        background-color: cyan;
+        width: 1000px;
+        min-width: 500px;
+    }
     </style>
 </head>
 <body>
@@ -40,6 +46,13 @@ Height and width can be specified in:
         <h1>Maximum Width and Height</h1>
             <p>An element cannot be wider than the max-width value, even if the width property value is set to something larger. For instance, if the width is set to 200px and the max-width is set to 150px, the actual width of the element will be 150px. Note: If the min-width property is specified with a value greater than that of max-width property, in this case the min-width value will in fact be the one that's applied.
                 Likewise, an element that has max-height applied will never be taller than the value specified, even if the height property is set to something larger. For example, if the height is set to 100px and the max-height set to 75px, the actual height of the element will be 75px. Note: If the min-height property is specified with a value greater than that of max-height property, in this case the min-height value will in fact be the one that's applied.
+            </p>
+    </div>
+
+    <div class="min">
+        <h1>Minimum Width and Height</h1>
+            <p>An element cannot be narrower than the min-width value, even if the width property value is set to something lesser. For example, if the width is set to 300px and the min-width is set to 400px, the actual width of the element will be 400px. Note: The min-width property is usually used to ensure that an element has at least a minimum width even if no content is present. However the element will be allowed to grow normally if its content exceeds the minimum width set.
+                Similarly, an element to which min-height is applied will never be smaller than the value specified, even if the height property is set to something lesser. For example, if the height is set to 200px, and the min-height is set to 300px, the actual height of the element will be 300px.
             </p>
     </div>
 </body>
