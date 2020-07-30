@@ -25,6 +25,13 @@
         width: 1000px;
         min-width: 500px;
     }
+
+    .overflow{
+        width: 250px;
+        height: 250px;
+        background-color: darkmagenta;
+        overflow: auto;
+    }
     </style>
 </head>
 <body>
@@ -54,6 +61,14 @@ Height and width can be specified in:
             <p>An element cannot be narrower than the min-width value, even if the width property value is set to something lesser. For example, if the width is set to 300px and the min-width is set to 400px, the actual width of the element will be 400px. Note: The min-width property is usually used to ensure that an element has at least a minimum width even if no content is present. However the element will be allowed to grow normally if its content exceeds the minimum width set.
                 Similarly, an element to which min-height is applied will never be smaller than the value specified, even if the height property is set to something lesser. For example, if the height is set to 200px, and the min-height is set to 300px, the actual height of the element will be 300px.
             </p>
+    </div>
+
+    <div class="overflow">
+        <h1>Overflow</h1>
+        <p>
+            The CSS overflow property specifies how to handle the content when it overflows its block level container. We know that every single element on a page is a rectangular box and the size, positioning and behavior of these boxes are controlled via CSS.
+            If you don't set the height of the box, it will grow as large as the content. But if you set a specific height or width of the box and the content inside cannot fit then what will happen. The CSS overflow property is used to overcome this problem. It specifies whether to clip content, render scroll bars, or just display content.
+        </p>
     </div>
 </body>
 </html>
