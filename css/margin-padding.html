@@ -28,6 +28,18 @@
             padding-left: 20px; */
             padding: 10px 50px 20px 20px;
         }
+
+        .box{
+            font-size: 16px;
+        }
+
+        div img{
+            height: 400px;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            }
     </style>
 </head>
 <body>
@@ -66,14 +78,18 @@ This area is actually the space around the content area and within the border-bo
 
     <div class="box">
         <h2>Box Model</h2>
+        <p>Every element that can be displayed on a web page is comprised of one or more rectangular boxes. CSS box model typically describes how these rectangular boxes are laid out on a web page. These boxes can have different properties and can interact with each other in different ways, but every box has a content area and optional surrounding padding, border, and margin areas.
+        </p>
+        <p>  The following diagram demonstrates how the width, height, padding, border, and margin CSS properties determine how much space an element can take on a web page.  
+        </p>
+        <img src="../image/margin-padding.png" alt="Diagram to illustrate margin, padding,etc">
+        <hr style = "height: 1.5px; width: 1200px; background-color: black;">
         <pre>
-padding: 20px;
-padding-top: 10px;
-padding-right: 50px;
-padding-bottom: 50px;
-padding-left: 20px;
-padding: 10px 50px 50px 20px;
+Total Width = margin-right + border-right + padding-right + width + padding-left + border-left + margin-left
+
+Total Height = margin-top + border-top + padding-top + height + padding-bottom + border-bottom + margin-bottom
         </pre>
+        <img src="../image/t-width.png" alt="Total height and width illustration">
     </div>
 </body>
 </html>
