@@ -47,6 +47,17 @@
         .visb{
             visibility: hidden;
         }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container1{
+            display: grid;
+            place-items: center;
+        }
     </style>
 </head>
 <body>
@@ -59,7 +70,7 @@
     Lorem ipsum dolor sit amet consectetur adipisicing elit. <p class="inline-block">This is an inline-block which can respond to height and width</p> quae nostrum numquam unde at animi in neque obcaecati? Odio ab libero deserunt itaque repellendus alias hic aut nobis dignissimos voluptatibus? Blanditiis modi tempore eum explicabo?
 
     <h2>Hiding Elements: display or visibility</h2>
-    Here are 5 boxes, in which there is a <p class="inline">display:none property on 2nd block </p> and on 4th block there is a <p class="inline">visibility: hidden property</p>
+    Here are 5 boxes, in which there is a <p class="inline">display:none property </p> on 2nd block and on 4th block there is a <p class="inline">visibility: hidden property</p>
     <br>
     <br>
     <br>
@@ -68,5 +79,19 @@
     <div>I am third box.</div>
     <div class="visb">I am forth box.</div>
     <div>I am fifth box.</div>
+
+    <h2>Flex and Grid</h2>
+    <br>
+    <div class="container1"
+    style="background-color: white; color: black;">
+    <p>Applied display: flex</p>
+        <img src="../image/racoon.jpg" alt="" height = 220px width="300px">
+    </div>
+
+    <div class="container1"
+    style="background-color: white; color: black;">
+    <p>Applied display: grid</p>
+        <img src="../image/dog.jpg" alt="" height = 220px width="300px">
+    </div>
 </body>
 </html>
