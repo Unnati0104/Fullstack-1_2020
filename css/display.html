@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display</title>
+    <style>
+        .inline{
+            display: inline;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            margin: 100px;
+        }
+
+        .block{
+            display: block;
+            border: black 2px solid;
+            margin-top: 10px;
+            padding: 20px;
+            padding-left: 440px;
+            height: 50px;
+            font-size: 20px;
+            background-color: tomato;
+        }
+
+        .inline-block{
+            display: inline-block;
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 160px;
+
+        }
+    </style>
 </head>
 <body>
-    
+    <h1 align = "center">Display</h1>
+    <h2>Inline and Block Elements</h2>
+    <p>Block-like elements (div, p, h1, etc.) always stretch out as far to the sides as possible and start on a new line.</p>
+    <p>Inline elements (span, img, a, etc.) only take the space that is necessary. They don't have to start on a new line.</p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab ratione hic numquam ex,<p class="inline">This is now an inline element with margin.</p> . Odit laborum voluptate eos soluta praesentium impedit necessitatibus expedita incidunt veritatis dolore neque similique hic suscipit accusantium ea commodi quia, fugiat alias ex, dignissimos odio, sit molestias. Doloribus, sunt cupiditate.
+    <span class = "block">This span is now act as a Block.</span>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. <p class="inline-block">This is an inline-block which can respond to height and width</p> quae nostrum numquam unde at animi in neque obcaecati? Odio ab libero deserunt itaque repellendus alias hic aut nobis dignissimos voluptatibus? Blanditiis modi tempore eum explicabo?
 </body>
 </html>
