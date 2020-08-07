@@ -10,7 +10,7 @@
             background-color: black;
             color: white;
             font-size: 20px;
-            margin: 100px;
+            /* margin: 100px; */
         }
 
         .block{
@@ -32,6 +32,21 @@
             width: 160px;
 
         }
+
+        div{
+            background-color: red;
+            color: white;
+            padding: 10px;
+            display: inline;
+        }
+
+        .hidn{
+            display: none;
+        }
+
+        .visb{
+            visibility: hidden;
+        }
     </style>
 </head>
 <body>
@@ -42,5 +57,16 @@
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab ratione hic numquam ex,<p class="inline">This is now an inline element with margin.</p> . Odit laborum voluptate eos soluta praesentium impedit necessitatibus expedita incidunt veritatis dolore neque similique hic suscipit accusantium ea commodi quia, fugiat alias ex, dignissimos odio, sit molestias. Doloribus, sunt cupiditate.
     <span class = "block">This span is now act as a Block.</span>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. <p class="inline-block">This is an inline-block which can respond to height and width</p> quae nostrum numquam unde at animi in neque obcaecati? Odio ab libero deserunt itaque repellendus alias hic aut nobis dignissimos voluptatibus? Blanditiis modi tempore eum explicabo?
+
+    <h2>Hiding Elements: display or visibility</h2>
+    Here are 5 boxes, in which there is a <p class="inline">display:none property on 2nd block </p> and on 4th block there is a <p class="inline">visibility: hidden property</p>
+    <br>
+    <br>
+    <br>
+    <div>I am first box.</div>
+    <div class="hidn">I am second box.</div>
+    <div>I am third box.</div>
+    <div class="visb">I am forth box.</div>
+    <div>I am fifth box.</div>
 </body>
 </html>
