@@ -130,7 +130,6 @@
                 display: grid;
                 place-items: center;
                 border-radius: 15px;
-                margin-bottom: 15px;
                 height: 400px;
                 font-size: 40px;
             }
@@ -196,7 +195,6 @@
                 width: 20%;
                 height: 615px;
                 float: left;
-                margin-bottom: 15px;
             }
 
             #nav{
@@ -204,7 +202,6 @@
                 display: grid;
                 place-items: center;
                 border-radius: 15px;
-                margin-bottom: 15px;
                 height: 100%;
                 font-size: 40px;
             }
@@ -318,6 +315,87 @@
             }
         }
 
+        /* Breakpoint-5 */
+        @media (max-width: 480px){
+            #header{
+                width: 100%; 
+                /* not necessary */
+                background-color: lightskyblue;
+                height: 70px;
+                margin-bottom: 15px;
+                border-radius: 15px;
+                display: grid;
+                place-items: center;
+                font-size: 40px;
+            }
+
+            #content{
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #content::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            #left-side::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            #left-side{
+                order: 2;
+                width: 100%;
+            }
+
+            #nav{
+                background-color: lightgreen;
+                display: grid;
+                place-items: center;
+                border-radius: 15px;
+                height: 200px;
+                font-size: 40px;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            #news{
+                background-color: yellowgreen;
+                display: grid;
+                place-items: center;
+                border-radius: 15px;
+                height: 200px; 
+                font-size: 40px;  
+                width: 100%;       
+            }
+
+            #right-side{
+                order: 1;
+                background-color: lightsalmon;
+                display: grid;
+                place-items: center;
+                border-radius: 15px;
+                height: 615px;
+                width: 100%;
+                float: right;
+                font-size: 40px;
+                margin-bottom: 15px;
+            }
+
+            #footer{
+                width: 100%;
+                background-color: pink;
+                height: 70px;
+                border-radius: 15px;
+                display: grid;
+                place-items: center;
+                font-size: 40px;
+            }
+        }
         
     </style>
 </head>
