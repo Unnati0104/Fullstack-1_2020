@@ -235,6 +235,89 @@
             }
         }
 
+        /* Breakpoint-4 */
+        @media (min-width: 481px) and (max-width: 768px){
+            #header{
+                width: 100%; 
+                /* not necessary */
+                background-color: lightskyblue;
+                height: 70px;
+                margin-bottom: 15px;
+                border-radius: 15px;
+                display: grid;
+                place-items: center;
+                font-size: 40px;
+            }
+
+            #content{
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #content::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            #left-side::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            #left-side{
+                order: 2;
+                width: 100%;
+            }
+
+            #nav{
+                background-color: lightgreen;
+                display: grid;
+                place-items: center;
+                border-radius: 15px;
+                height: 300px;
+                font-size: 40px;
+                float: left;
+                width: 48%;
+            }
+
+            #news{
+                background-color: yellowgreen;
+                display: grid;
+                place-items: center;
+                border-radius: 15px;
+                height: 300px; 
+                font-size: 40px; 
+                float: right;  
+                width: 50%;       
+            }
+
+            #right-side{
+                order: 1;
+                background-color: lightsalmon;
+                display: grid;
+                place-items: center;
+                border-radius: 15px;
+                height: 615px;
+                width: 100%;
+                float: right;
+                font-size: 40px;
+                margin-bottom: 15px;
+            }
+
+            #footer{
+                width: 100%;
+                background-color: pink;
+                height: 70px;
+                border-radius: 15px;
+                display: grid;
+                place-items: center;
+                font-size: 40px;
+            }
+        }
+
         
     </style>
 </head>
