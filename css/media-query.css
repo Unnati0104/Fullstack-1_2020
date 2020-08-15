@@ -1,0 +1,391 @@
+.container{
+    border: solid black;
+    color: white;
+    width: 1200px;
+    padding: 15px;
+    margin: 0px auto;
+}
+
+/* Breakpoints
+    min     max
+1. 1201 to ----- (Extra Large Screen)
+2. 1025 to 1200   (Large Screen)
+3. 769 to 1024 (Medium Large Screens)
+4. 481 to 768 (Tablet Screens)
+5. upto 480 (Mobile Screens) */
+
+/* Breakpoint-1 */
+@media (min-width: 1201px){
+    #header{
+        width: 100%; 
+        /* not necessary */
+        background-color: lightskyblue;
+        height: 70px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+        font-size: 40px;
+    }
+
+    #content{
+        margin-bottom: 15px;
+    }
+
+    #content::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    #left-side{
+        width: 20%;
+        height: 615px;
+        float: left;
+    }
+
+    #nav{
+        background-color: lightgreen;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        height: 400px;
+        font-size: 40px;
+    }
+
+    #news{
+        background-color: yellowgreen;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 200px; 
+        font-size: 40px;           
+    }
+
+    #right-side{
+        background-color: lightsalmon;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 615px;
+        width: 78%;
+        float: right;
+        font-size: 40px;
+    }
+
+    #footer{
+        width: 100%;
+        background-color: pink;
+        height: 70px;
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+        font-size: 40px;
+    }
+}
+
+/* Breakpoint-2 */
+@media (min-width: 1025px) and (max-width: 1200px){
+    #header{
+        width: 100%; 
+        /* not necessary */
+        background-color: lightskyblue;
+        height: 70px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+        font-size: 40px;
+    }
+
+    #content{
+        margin-bottom: 15px;
+    }
+
+    #content::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    #left-side{
+        width: 20%;
+        height: 615px;
+        float: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav{
+        order: 2;
+        background-color: lightgreen;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 400px;
+        font-size: 40px;
+    }
+
+    #news{
+        order: 1;
+        background-color: yellowgreen;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 200px; 
+        font-size: 40px; 
+        margin-bottom: 15px;          
+    }
+
+    #right-side{
+        background-color: lightsalmon;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 615px;
+        width: 78%;
+        float: right;
+        font-size: 40px;
+    }
+
+    #footer{
+        width: 100%;
+        background-color: pink;
+        height: 70px;
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+        font-size: 40px;
+    }
+}
+
+/* Breakpoint-3 */
+@media (min-width: 769px) and (max-width: 1024px){
+    #header{
+        width: 100%; 
+        /* not necessary */
+        background-color: lightskyblue;
+        height: 70px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+        font-size: 40px;
+    }
+
+    #content{
+        margin-bottom: 15px;
+    }
+
+    #content::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    #left-side{
+        width: 20%;
+        height: 615px;
+        float: left;
+    }
+
+    #nav{
+        background-color: lightgreen;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 100%;
+        font-size: 40px;
+    }
+
+    #news{
+       display: none;        
+    }
+
+    #right-side{
+        background-color: lightsalmon;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 615px;
+        width: 78%;
+        float: right;
+        font-size: 40px;
+    }
+
+    #footer{
+        width: 100%;
+        background-color: pink;
+        height: 70px;
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+        font-size: 40px;
+    }
+}
+
+/* Breakpoint-4 */
+@media (min-width: 481px) and (max-width: 768px){
+    #header{
+        width: 100%; 
+        /* not necessary */
+        background-color: lightskyblue;
+        height: 70px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+        font-size: 40px;
+    }
+
+    #content{
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    #left-side::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    #left-side{
+        order: 2;
+        width: 100%;
+    }
+
+    #nav{
+        background-color: lightgreen;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 300px;
+        font-size: 40px;
+        float: left;
+        width: 48%;
+    }
+
+    #news{
+        background-color: yellowgreen;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 300px; 
+        font-size: 40px; 
+        float: right;  
+        width: 50%;       
+    }
+
+    #right-side{
+        order: 1;
+        background-color: lightsalmon;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 615px;
+        width: 100%;
+        float: right;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    #footer{
+        width: 100%;
+        background-color: pink;
+        height: 70px;
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+        font-size: 40px;
+    }
+}
+
+/* Breakpoint-5 */
+@media (max-width: 480px){
+    #header{
+        width: 100%; 
+        /* not necessary */
+        background-color: lightskyblue;
+        height: 70px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+        font-size: 40px;
+    }
+
+    #content{
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    #left-side::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    #left-side{
+        order: 2;
+        width: 100%;
+    }
+
+    #nav{
+        background-color: lightgreen;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 200px;
+        font-size: 40px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #news{
+        background-color: yellowgreen;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 200px; 
+        font-size: 40px;  
+        width: 100%;       
+    }
+
+    #right-side{
+        order: 1;
+        background-color: lightsalmon;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 615px;
+        width: 100%;
+        float: right;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    #footer{
+        width: 100%;
+        background-color: pink;
+        height: 70px;
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+        font-size: 40px;
+    }
+}
