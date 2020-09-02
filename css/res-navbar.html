@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         *{
             padding: 0;
@@ -33,7 +34,7 @@
         .menu li{
             display: inline-block;
             line-height: 70px;
-
+            margin: 5px;
         }
 
         .menu li a{
@@ -42,18 +43,47 @@
             font-size: 20px;
             padding: 0px;
             text-transform: uppercase;
+            transition: .4s;
+        }
+        .menu li a:hover,
+        .show-btn:hover, .hide-btn:hover{
+            color: skyblue;
+
+        }
+        .show-btn, .hide-btn{
+            font-size: 30px;
+            color: white;
+            line-height: 70px;
+            display: none;
+        }
+
+        .show-btn{
+            float: right;
+        }
+
+        #chk{
+            position: absolute;
+            visibility: hidden;
+            z-index: -10;
         }
     </style>
 </head>
 <body>
     <div class="header">
         <h2>Navbar</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-btn">
+            <i class="fa fa-bars"></i>
+        </label>
         <ul class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact Us</a></li>
+            <label for="chk" class="show-btn">
+                <i class="fa fa-times"></i>
+            </label>
         </ul>
     </div>
 </body>
