@@ -6,11 +6,105 @@
     <title>Practical-12</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-       
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family:Arial, Helvetica, sans-serif;
+       }
+
+       body{
+           min-width: 100%;
+           background-color: grey;
+       }
+
+       .wrapper{
+           width: 600px;
+           background-color: #fff;
+           padding: 10px;
+           margin: 40px auto;
+       }
+
+       .custom-table{
+           width: 100%;
+           margin: 0 auto;
+           border-collapse: collapse;
+       }
+
+       h2{
+           text-align: center;
+           text-transform: uppercase;
+           margin-bottom: 10px;
+       }
+
+       .basic{
+           background-color:lightgreen;
+       }
+
+       .plus{
+           background-color:lightpink;
+       }
+
+       .delux{
+           background-color:lightseagreen;
+       }
+
+       .pro{
+           background-color:lightsalmon;
+       }
+
+       .custom-table th, .custom-table td{
+            width: 150px;
+            padding: 8px 5px;
+            text-align: center;
+            border-right: 2px solid white;
+            border-left: 2px solid white;
+       }
+
+       .custom-table th{
+           height: 70px;
+           color: purple;
+           font-size: 28px;
+       }
+
+       i{
+           font-size: 28px;
+           color: purple;
+           margin-right: 10px;
+       }
+
+       tbody tr:first-child td{
+           font-size: 20px;
+           color: darkgreen;
+       }
+
+       tbody tr:nth-child(odd), tfoot tr:nth-child(odd){
+           background-color: bisque;
+       }
+
+       a{
+           text-decoration: none;
+           background-color:purple;
+           padding: 15px 25px;
+           color: white;
+           border-radius: 10px;
+           font-size: 18px;
+           vertical-align: middle;
+       }
+
+       a:hover{
+           background-color: red;
+       }
+
+       tfoot tr {
+           line-height: 70px;
+       }
+
+
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="wrapper">
         <h2>Select Your Plan</h2>
         <table class="custom-table">
             <colgroup class="basic"></colgroup>
@@ -63,28 +157,28 @@
                     <td>Included</td>
                 </tr>
                 <tr>
-                    <td><a href="../image/icon-check.png"></a></td>
-                    <td><a href="../image/icon-check.png"></a></td>
-                    <td><a href="../image/icon-check.png"></a></td>
-                    <td><a href="../image/icon-check.png"></a></td>
+                    <td><img src="../image/icon-check.png" alt=""></td>
+                    <td><img src="../image/icon-check.png" alt=""></td>
+                    <td><img src="../image/icon-check.png" alt=""></td>
+                    <td><img src="../image/icon-check.png" alt=""></td>
                 </tr>
                 <tr>
-                    <td><a href="../image/icon-x.png"></a></td>
-                    <td><a href="../image/icon-check.png"></a></td>
-                    <td><a href="../image/icon-check.png"></a></td>
-                    <td><a href="../image/icon-check.png"></a></td>
+                    <td><img src="../image/icon-x.png" alt=""></td>
+                    <td><img src="../image/icon-check.png" alt=""></td>
+                    <td><img src="../image/icon-check.png" alt=""></td>
+                    <td><img src="../image/icon-check.png" alt=""></td>
                 </tr>
                 <tr>
-                    <td><a href="../image/icon-x.png"></a></td>
-                    <td><a href="../image/icon-x.png"></a></td>
-                    <td><a href="../image/icon-check.png"></a></td>
-                    <td><a href="../image/icon-check.png"></a></td>
+                    <td><img src="../image/icon-x.png" alt=""></td>
+                    <td><img src="../image/icon-x.png" alt=""></td>
+                    <td><img src="../image/icon-check.png" alt=""></td>
+                    <td><img src="../image/icon-check.png" alt=""></td>
                 </tr>
                 <tr>
-                    <td><a href="../image/icon-x.png"></a></td>
-                    <td><a href="../image/icon-x.png"></a></td>
-                    <td><a href="../image/icon-x.png"></a></td>
-                    <td><a href="../image/icon-check.png"></a></td>
+                    <td><img src="../image/icon-x.png" alt=""></td>
+                    <td><img src="../image/icon-x.png" alt=""></td>
+                    <td><img src="../image/icon-x.png" alt=""></td>
+                    <td><img src="../image/icon-check.png" alt=""></td>
                 </tr>
             </tbody>
             <tfoot>
