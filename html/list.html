@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        .outside{
+            list-style-position: outside;
+        }
+
+        .inside{
+            list-style-position: inside;
+        }
+
+        .marker li{
+            /* list-style-image: url('https://t3.ftcdn.net/jpg/02/53/70/76/240_F_253707611_3goDKUC9Gaaf3I9Bz1txoaxPv3piNhFH.jpg'); */
+            margin: 0;
+            padding: 36px 0 36px 84px;
+            list-style: none;
+            background-image: url("https://t3.ftcdn.net/jpg/02/53/70/76/240_F_253707611_3goDKUC9Gaaf3I9Bz1txoaxPv3piNhFH.jpg");
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 40px;
+        }
+
+        .rem-ind ul{
+            padding-left: 0px;
+        }
+
+        .col-bull ul{
+            list-style: none;
+        }
+
+        .col-bull li::before{
+            /* Unicode numbers: • = "\2022", ◦ = \25E6" and ▪ = "\25AA" */
+            content: "\2022";
+            color: blue;
+            /* That inserts a red bullet, but not in the same place as the original bullet. */
+            width: 1em;
+            margin-left: -1em;
+            display: inline-block;
+        }
+
+        .col-num ol{
+            list-style: none;
+            counter-reset: li;
+        }
+
+        /* we need to increase the counter */
+        .col-num li{
+            counter-increment: li;
+        }
+
+        .col-num li::before{
+            content: counter(li);
+            color: red;
+            width: 1em;
+            margin-left: -1.5em;
+            margin-right: 0.5em;
+            text-align: right;
+            direction: rtl;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lists</h1>
+    <h2>1. Unordered Lists</h2>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+        <li>Orange</li>
+        <li>Pineappple</li>
+    </ul>
+    <p>Types of bullet points:-</p>
+    <ul>
+    <li><h3>Disc</h3></li>
+    <ul style="list-style-type: disc;">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+        <li>Orange</li>
+        <li>Pineappple</li>
+    </ul>
+    <li><h3>Circle</h3></li>
+    <ul style="list-style-type: circle;">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+        <li>Orange</li>
+        <li>Pineappple</li>
+    </ul>
+    <li><h3>Square</h3></li>
+    <ul style="list-style-type: square;">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+        <li>Orange</li>
+        <li>Pineappple</li>
+    </ul>
+   <li><h3>No Bullets</h3></li>
+    <ul style="list-style-type: none">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+        <li>Orange</li>
+        <li>Pineappple</li>
+    </ul>
+</ul>
+
+<h2>2. Ordered Lists</h2>
+<ol>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Orange</li>
+    <li>Pineappple</li>
+</ol>
+<h3>Start Attribute</h3>
+<p>list start from 10</p>
+<ol start="10">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Orange</li>
+    <li>Pineappple</li>
+</ol>
+<p>Types of bullet points:-</p>
+<ol>
+<li><h3>Default-Case Numericals</h3></li>
+<ol type="1">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Orange</li>
+    <li>Pineappple</li>
+</ol>
+<li><h3>Upper-Case Numerals</h3></li>
+<ol type="I">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Orange</li>
+    <li>Pineappple</li>
+</ol>
+<li><h3>Lower-Case Numerals</h3></li>
+<ol type="i">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Orange</li>
+    <li>Pineappple</li>
+</ol>
+<li><h3>Upper-Case Letters</h3></li>
+<ol type="A">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Orange</li>
+    <li>Pineappple</li>
+</ol>
+<li><h3>Lower-Case Letters</h3></li>
+<ol type="a">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Orange</li>
+    <li>Pineappple</li>
+</ol>
+</ol>
+
+<h2>3. Description Lists</h2>
+<dl>
+    <dt>Bread</dt>
+    <dd>A baked fod made of floor</dd>
+    <dt>Coffee</dt>
+    <dd>A drink made from roasted coffe beans</dd>
+</dl>
+<hr style="height: 2px; background-color: black;">
+ <h3>Changing the position of list markers</h3>
+
+ <ol class="outside">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Orange</li>
+    <li>Pineappple</li>
+</ol>
+
+<ol class="inside">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Orange</li>
+    <li>Pineappple</li>
+</ol>
+
+<h3>Using images as list markers</h3>
+<ul class="marker">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Orange</li>
+    <li>Pineappple</li>
+</ul>
+<hr style="height: 2px; background-color: black;">
+
+<h2>Important Tricks</h2>
+<h3>Remove Indentation</h3>
+<div class="rem-ind">
+<ul> 
+    <li>Section-A
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+        <li>Orange</li>
+        <li>Pineappple</li>
+    </ul>
+    </li>
+</ul>
+
+<ul>
+    <li>Section-B
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+        <li>Orange</li>
+        <li>Pineappple</li>
+    </ul>
+    </li>
+</ul>
+</div>
+
+<h3>Colored Bullets</h3>
+<div class="col-bull">
+<ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Orange</li>
+    <li>Pineappple</li>
+</ul>
+</div>
+
+<h3>Colored List Numbers</h3>
+<div class="col-num">
+<ol>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Grapes</li>
+    <li>Orange</li>
+    <li>Pineappple</li>
+</ol>
+</div>
+</body>
+</html>
