@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Elements</title>
+    <style>
+    .container{
+        border: solid black;
+        color: white;
+        font-size: 40px;
+        padding: 15px;
+        margin: 0px auto;
+    }
+
+    header{
+        width: 100%; 
+        /* not necessary */
+        background-color: lightskyblue;
+        height: 70px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+    }
+
+    main{
+        margin-bottom: 15px;
+    }
+
+    main::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .left-side{
+        width: 20%;
+        height: 615px;
+        float: left;
+    }
+
+    nav{
+        background-color: lightgreen;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        height: 400px;
+    }
+
+    aside{
+        background-color: yellowgreen;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 200px;            
+    }
+
+    .right-side{
+        background-color: lightsalmon;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        height: 615px;
+        width: 78%;
+        float: right;
+    }
+
+    footer{
+        width: 100%;
+        background-color: pink;
+        height: 70px;
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>Header</header>
+    <main>    
+            <section class="left-side">
+                <nav>Navigation</nav>
+                <aside>News Updates</aside>
+            </section>
+            <section class="right-side">Main Content</section>
+    </main>
+    <footer>Footer</footer>
+</div>
+</body>
+</html>
