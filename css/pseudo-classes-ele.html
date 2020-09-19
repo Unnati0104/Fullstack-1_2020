@@ -75,12 +75,57 @@
         .nth li:nth-child(3n){
             font-size: 20px;
         }
+
+        .fline::first-line{
+            background-color: lightblue;
+        }
+
+        .fletter::first-letter{
+            font-size: 28px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .sel::selection{
+            background-color: green;
+        }
+
+        h3{
+            color: hotpink;
+            font-size: 24px;
+            text-align: center;
+            position: relative;
+        }
+
+        h3::before, h3::after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            position: absolute;
+            background-color:lawngreen;
+            transition: all .3s;
+        }
+
+        h3::before{
+            left: 0;
+            top: -10px;
+        }
+
+        h3::after{
+            right: 0;
+            bottom: -10px;
+        }
+
+        h3:hover::before, h3:hover::after{
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <h1>Pseudo Classes</h1>
     <p> <b> Syntax :-</b> selector: pseudo-class { property: value; } </p>
-    <h3>1.Anchor Pseudo-classes</h3>
+    <h2>1.Anchor Pseudo-classes</h2>
     <p class="link">1.<a href="#">Links</a></p>
     <p class="alink">2.<a href="#">Active Links</a></p>
     <p class="vlink">3.<a href="#"> Visited Links</a></p>
@@ -139,5 +184,15 @@
     </ul>
 
     <h1>Pseudo Elements</h1>
+    <p> <b> Syntax :-</b> selector:: pseudo-class { property: value; } </p>
+    <h2>1. first-line</h2>
+    <p class="fline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aliquam laborum quia mollitia similique tempore, officiis nam a! Saepe accusamus quos vero voluptatem aut voluptatibus illum atque expedita ut, corporis nostrum ducimus! Corporis enim tempore aliquid facilis voluptate labore beatae sed veritatis repudiandae eius repellat at fugiat accusamus facere necessitatibus qui voluptatibus velit, sunt iusto distinctio odio. Quos, iure ex!</p>
+    <h2>2. first-letter</h2>
+    <p class="fletter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam natus omnis explicabo soluta. Dolorem quia fugiat sapiente repellat architecto sit repudiandae modi, perferendis voluptatum atque ratione, animi culpa corporis, a officiis adipisci quibusdam. Rem nulla ea expedita aspernatur, ex harum omnis ab, maiores eius, facilis error iusto sapiente alias voluptates veritatis eveniet voluptatibus aut vero laudantium dolor commodi deleniti reiciendis.</p>
+    <h2>3. selection</h2>
+    <p class="sel">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quod neque illum. Nulla corporis aperiam error totam dolor, est eos? Illo vitae quo quos, delectus nam eveniet atque natus incidunt sunt debitis provident adipisci recusandae voluptatem sed. Similique rerum fugiat quos voluptatem, veniam obcaecati a. Iure voluptatibus dolorem blanditiis, consequuntur culpa repellat beatae totam dolorum dolore, fugiat asperiores repellendus facilis.</p>
+    <h2>4. before</h2>
+    <h2>5. after</h2>
+    <h3>Combined Example of Before After</h3>
 </body>
 </html>
