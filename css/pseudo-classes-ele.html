@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes and Elements</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        .link a{
+            color: crimson;
+        }
+
+        .alink a:active{
+            color: yellowgreen;
+        }
+
+        .vlink a:visited{
+            color: teal;
+        }
+
+        .hover a:hover{
+            color: white;
+        }
+
+        .focus-l a:focus{
+            color: hotpink;
+        }
+
+        .focus input[type = 'text']:focus{
+            background-color: lightcyan;
+        }
+
+        button:enabled{
+            background-color: lightgreen;
+        }
+
+        button:disabled{
+            /* background-color: green; */
+            opacity: 0.7;
+        }
+
+        input[type = 'radio']:checked+label{
+            color: limegreen;
+            font-size: 20px;
+        }
+
+        input:required{
+            background-color: lightblue;
+        }
+
+        .first li:first-child{
+            color: red;
+        }
+
+        .last li:last-child{
+            color: blue;
+        }
+
+        .nth li:nth-child(odd){
+            color: green;
+        }
+
+        .nth li:nth-child(even){
+            background-color: indianred;
+        }
+
+        .nth li:nth-child(3n){
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <p> <b> Syntax :-</b> selector: pseudo-class { property: value; } </p>
+    <h3>1.Anchor Pseudo-classes</h3>
+    <p class="link">1.<a href="#">Links</a></p>
+    <p class="alink">2.<a href="#">Active Links</a></p>
+    <p class="vlink">3.<a href="#"> Visited Links</a></p>
+    <p class="hover">4.<a href="#">Hover Link</a></p>
+    <p class="focus-l">5.<a href="#">Focus Link</a></p>
+
+    <h2>2. Input & link related pseudo classes</h2>
+    <p class="focus">1.Focus <br><br>
+    <label for="">Enter Name</label>
+    <input type="text"> 
+    </p>
+
+    <p>2.Enabled
+        <button type="submit">Click Me!</button>
+    </p>
+
+    <p>3.Disabled
+        <button type="submit" disabled>Click Me!</button>
+    </p>
+
+    <p> 4.Checked
+        <input type="radio" id="chk" checked>
+        <label for="chk">one</label>
+        <input type="radio" id="chke">
+        <label for="chke">two</label>
+        <input type="radio" id="chkd">
+        <label for="chkd">three</label>
+    </p>
+
+    <p> 5. Required <br>
+        <label for="">Enter email</label>
+        <input type="email" placeholder="abc@gmail.com" required>
+        <button type="submit">Click Me!</button>
+    </p>
+
+    <h2>3. :first-child Pseudo-class</h2>
+    <ul class="first">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <h2>4. :last-child Pseudo-class</h2>
+    <ul class="last">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <h2>5. :nth-child Pseudo-class</h2>
+    <ul class="nth">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>sex</li>
+    </ul>
+
+    <h1>Pseudo Elements</h1>
+</body>
+</html>
