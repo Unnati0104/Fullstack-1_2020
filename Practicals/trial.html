@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Practical-14</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-transform: uppercase;
+            color: red;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 45px;
+        }
+
+        body{
+            background-color: lightgray;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box{
+            height: 380px;
+            width: 300px;
+            border: 1px solid black;
+            margin: 20px 70px;
+            background-color: white;
+        }
+
+        .form-header{
+            width: 300px;
+            height: 120px;    
+            background: linear-gradient(to right, orange, red);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-header h3{
+            font-size: 20px;
+            top: 15px;
+            color: white;
+            /* background: linear-gradient(to right, orange, red); */
+        }
+
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon .fa{
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            /* background: linear-gradient(to right, orange, red); */
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        form{
+           margin-top: 30px;
+           padding: 20px;
+        }
+
+        form input{
+            width: 95%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Templates</h1>
+    <div class="container">
+    <div class="box">
+        <div class="form-header">
+            <h3>Log in</h3>
+            <div class="icon">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
+        </div>
+            <form action="">
+                <input type="email" placeholder="Your email">
+                <input type="password" placeholder="Your password"><br>
+                <p>Forgot <b>Password?</b></p>
+                <button type="submit">Log in</button>
+                <p>Don't have an account? Sign up</p>
+            </form>
+    </div>
+
+    <div class="box">
+        <h3>Sign up</h3>
+            <form action="">
+                <input type="email" placeholder="Your email">
+                <input type="password" placeholder="Your password"> <br>
+                <input type="checkbox" id="chk"> 
+                <label for="chk">Accept the <span>Terms and Condition</span></label><br>
+                <button type="submit">Sign up</button>
+                <a href="#">Have an account? <span>Log in</span></a>
+            </form>
+            <section class="form-footer-1">
+                <div class="icon">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                </div>
+            </section>
+    </div>
+    <div class="box">
+        <h3>Sign in</h3>
+            <form action="">
+                <input type="email" placeholder="Your email">
+                <input type="password" placeholder="Your password"><br>
+                <a href="#"><span>Forgot Password?</span> </a> <br>    
+                <button type="submit">Sign in</button><br>
+                <a href="#">or sign in with:</a>
+            </form>
+            <section class="form-footer-2">
+                <div class="icon">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                </div>
+            </section>
+    </div>
+</div>
+</body>
+</html>
