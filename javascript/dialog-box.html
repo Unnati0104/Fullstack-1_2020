@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Box</title>
+    <style>
+        button{
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn-1">Click me for alert dialog-box</button>
+    <br>
+    <button id="btn-2">Click me for confirm dialog-box</button>
+    <br>
+    <button id="btn-3">Click me for prompt dialog-box</button>
+    <br>
+    
+    <script>
+        var x = document.getElementById("btn-1");
+        x.onclick = function() {
+            alert("hello world!");
+         };
+
+        var y = document.getElementById("btn-2");
+
+        y.onclick = function() {
+            confirm("Would you like to proceed?");
+         };
+
+        var z = document.getElementById("btn-3");
+
+        z.onclick = function() {
+            prompt("Enter your name");
+         };
+    </script>
+
+    <noscript style="color: red; font-size: 18px;"> 
+        Please Enable Javascript!!
+        This comes when Javascript is turned off.
+    </noscript> 
+</body>
+</html>

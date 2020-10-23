@@ -12,16 +12,18 @@
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        body{
+            background-color: lightgray;
+        }
+
         h1{
             text-transform: uppercase;
             color: red;
             text-align: center;
             font-weight: bolder;
-            font-size: 45px;
-        }
-
-        body{
-            background-color: lightgray;
+            font-size: 55px;
+            margin-bottom: 30px;
         }
 
         .container{
@@ -40,20 +42,19 @@
         }
 
         .form-header{
-            width: 300px;
+            width: 298px;
             height: 120px;    
             background: linear-gradient(to right, orange, red);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            color: white;
         }
 
-        .form-header h3{
+        h2{
             font-size: 20px;
             top: 15px;
-            color: white;
-            /* background: linear-gradient(to right, orange, red); */
         }
 
         .icon{
@@ -65,8 +66,7 @@
         .icon .fa{
             color: white;
             font-size: 20px;
-            padding: 10px;
-            /* background: linear-gradient(to right, orange, red); */
+            padding: 20px 10px 10px 10px;
         }
 
         a{
@@ -78,18 +78,91 @@
            padding: 20px;
         }
 
-        form input{
+        form input[type='email'],
+        form input[type='password']{
             width: 95%;
+            height: 30px;
             margin-bottom: 10px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #000;
         }
+
+        .form-1 p:first-of-type{
+            text-align: right;
+            font-size: 14px;
+            color: grey;
+            margin-bottom: 42px;
+        }
+
+        .form-1 b{
+            color: black;
+        }
+
+        button{
+            border-radius: 15px;
+            height: 35px;
+            width: 80px;
+            color: white;
+            font-size: 13px;
+            text-transform: uppercase;
+            border: none;
+        }
+
+        .form-1 button{
+            background-color: grey;
+        }
+
+        .form-1 p:last-child{
+            display: inline;
+            font-size: 11px;
+            color: grey;
+            margin-left: 14px;
+        }
+
+        .form-2 h2{
+            margin: 20px 110px;
+            color: rgb(238, 61, 90);
+        }
+
+        .form-2 label{
+            font-size: 12px;
+        }
+
+        .form-2 label span,
+        .form-2 p span{
+            color: rgb(6, 101, 226);
+            font-weight: bold;
+        }
+
+        .form-2 button{
+            background-color: rgb(238, 61, 90);
+            margin-top: 50px;
+        }
+
+        .form-2 p{
+            display: inline;
+            font-size: 13px;
+            color: grey;
+            margin-left: 20px;
+        }
+
+        .form-footer-1{
+            background-color: rgb(117, 148, 147);
+            height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
     </style>
 </head>
 <body>
     <h1>Form Templates</h1>
     <div class="container">
-    <div class="box">
+    <div class="box form-1">
         <div class="form-header">
-            <h3>Log in</h3>
+            <h2>Log in</h2>
             <div class="icon">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -101,19 +174,19 @@
                 <input type="password" placeholder="Your password"><br>
                 <p>Forgot <b>Password?</b></p>
                 <button type="submit">Log in</button>
-                <p>Don't have an account? Sign up</p>
+                <p>Don't have an account? <b>Sign up</b></p>
             </form>
     </div>
 
-    <div class="box">
-        <h3>Sign up</h3>
+    <div class="box form-2">
+        <h2>Sign up</h2>
             <form action="">
                 <input type="email" placeholder="Your email">
                 <input type="password" placeholder="Your password"> <br>
                 <input type="checkbox" id="chk"> 
-                <label for="chk">Accept the <span>Terms and Condition</span></label><br>
+                <label for="chk">Accept the <span>Terms and Conditions</span></label><br>
                 <button type="submit">Sign up</button>
-                <a href="#">Have an account? <span>Log in</span></a>
+                <p>Have an account? <a href=""><span>Sign in</span></a></p>
             </form>
             <section class="form-footer-1">
                 <div class="icon">
@@ -124,13 +197,13 @@
             </section>
     </div>
     <div class="box">
-        <h3>Sign in</h3>
+        <h2>Sign in</h2>
             <form action="">
                 <input type="email" placeholder="Your email">
                 <input type="password" placeholder="Your password"><br>
                 <a href="#"><span>Forgot Password?</span> </a> <br>    
-                <button type="submit">Sign in</button><br>
-                <a href="#">or sign in with:</a>
+                <button type="submit">Sign in</button>
+                <p>or sign in with:</p>
             </form>
             <section class="form-footer-2">
                 <div class="icon">
