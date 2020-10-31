@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        pre{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Variables in JavaScript</h1>
+    <p>To assign a value in variable, = or assignment operator is used, followed by value.</p>
+    <pre>
+        var x = "Hello World"; 
+        var y = 'Angel';
+        var z = 10;
+        var a = 1, b= 2, c=3;
+        var u;                      //undefined
+    </pre>
+    <p>We get the output for the  following by using "document.write()"</p>
+
+    <h2>Changing values in  variables</h2>
+    <pre>
+        var x = "hello";
+        x= "hola";
+        document.write(x);           //hola
+    </pre>
+
+    <h2>Strict Mode</h2>
+    <pre>
+        "use strict";   
+        var x1="beta labs";          // allowed in strict mode
+        x2="javascript";             // not allowed in strict mode
+        
+    
+        for( var i=1;i<=10;i++){}    // allowed,
+        for( i=1;i<=10;i++){}        // not allowed, i is not declared
+    
+        var x=10;                    // allowed
+        var y=010;                   // not allowed, it is octal notation
+    </pre>
+
+    <h2>Sloppy Mode</h2>
+    <pre>
+        var x1="Beta Labs";          // allowed 
+        x2="javascript";             // also allowed 
+    </pre>
+
+    <h2>Variable Hoisting</h2>
+    <pre>
+        console.log(x);       // return undefined
+
+        var x="hello js";      
+    
+        console.log(x);        // return "hello js"
+    </pre>
+</body>
+
+<script>
+    
+</script>
+
+</html>
+

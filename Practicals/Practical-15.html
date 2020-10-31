@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+    <style>
+        body{
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 50px;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button{
+            width: 50px;
+            height: 50px;
+            margin: 0px 50px;
+            background-color: yellow;
+            font-size: 20px;
+        }
+
+        span{
+            font-size: 35px;
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <div class="container">
+        <button id="btn1">-</button>
+        <span id="val">0</span>
+        <button id="btn2">+</button>
+    </div>
+
+    <script>
+        var decr = document.getElementById("btn1");
+        var value = document.getElementById("val");
+        var incr = document.getElementById("btn2");
+        var count = 0;
+
+        decr.disabled = true;
+
+        incr.onclick = function(){
+            count = count+1;
+            value.innerHTML = count;
+            if(count>0){
+                decr.disabled = false;
+             } 
+        }
+
+        decr.onclick = function(){
+            count = count-1;
+            value.innerHTML = count;
+            if(count<=0){
+                decr.disabled = true;
+            }
+        }
+    </script>
+</body>
+</html>
