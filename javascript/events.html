@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        #container{
+            width: 300px;
+            height: 300px;
+            display: block;
+            margin: 20px auto;
+            background-color: tomato;
+        }
+
+        button{
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <!-- 1. HTML Handler Attribute -->
+    <button onclick="myfun()"> Click Me!!</button>
+
+    <script>
+        function myfun(){
+            var x = document.getElementById("container");
+            x.style.backgroundColor = "yellowgreen";
+        }
+
+        // 2. DOM Level-1 Javascript handler
+        //Function calling way-1
+
+        var btn=document.querySelector('button');
+        btn.onclick=myfun;
+        btn.onclick=function(){
+            document.body.style.background="grey";
+        };
+
+          //DOM Level-2 JavaScript Event Handler(addEventListner)
+          var box = document.getElementById("container");
+          box.addEventListener('mouseover', abc);
+          box.addEventListener('mouseover', abc1);
+
+          function abc(){
+              box.style.backgroundColor = "blue";
+          }
+
+          function abc1(){
+              box.style.border = "5px solid black";
+              box.innerHTML = "This happens on hover";
+              box.style.fontSize = "30px";
+              box.style.textAlign="center";
+          }
+
+          box.addEventListener("mouseout", function(){
+              box.style.backgroundColor = "tomato";
+              box.style.color = "white";
+              box.style.borderColor = "white";
+          })
+
+    </script>
+</body>
+</html>

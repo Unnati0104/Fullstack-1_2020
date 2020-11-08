@@ -24,7 +24,7 @@
         var a = 1, b= 2, c=3;
         var u;                      //undefined
     </pre>
-    <p>We get the output for the  following by using "document.write()"</p>
+    <p>We get the output for the  following by using "document.write() on browser and by console.log() in console"</p>
 
     <h2>Changing values in  variables</h2>
     <pre>
@@ -61,11 +61,54 @@
     
         console.log(x);        // return "hello js"
     </pre>
+
+    <h2>Scopes in JavaScript</h2>
+    <ol>
+        <li>Global</li>
+        <pre>
+            var x="hello js";        // global variable
+
+            var y=88;                // another global variable
+            console.log(x);          // returns "hello string"
+            console.log(y);          // returns 88
+
+            function myFunction(){
+                console.log(x)           // returns "hello string"
+                console.log(y);          // returns 88
+            }
+        </pre>
+        <li>Local</li>
+        <pre>
+            function myFunction() {
+                var x = 'local variable';
+                var y = 'local variable';
+              
+                console.log(x); // returns "local variable"
+                console.log(y); // returns "local variable"
+              }
+              
+              myFunction(); // call the function
+              
+              console.log(x); // x is not defined
+              console.log(y); // y is not defined              
+        </pre>
+        <li>Block</li>
+        <p>ES6 introduced let and const variables, unlike var variables, they can be scoped to the nearest pair of curly braces. That means, they can’t be accessed from outside that pair of curly braces. </p>
+    </ol>
+
+    <h2>let and const block scope</h2>
+    <pre>
+        {
+            let x = 'user'; // to store values in block scope
+          }
+          var i = 2; // global scope
+          if (i == 2) {
+            let i = 3; // block scope
+            console.log(i); // 3
+          }
+          console.log(i); // 2          
+    </pre>
+
 </body>
-
-<script>
-    
-</script>
-
 </html>
 
