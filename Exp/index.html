@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Hello, world!</title>
+    <style>
+        ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header{
+    /* background-color: grey; */
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* font-size: 32px; */
+    /* position: fixed; */
+    /* width: 100%; */
+}
+
+#header a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    color:black;
+    padding: 12px 15px;
+    font-size: 22px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#header a:hover {
+    padding-top: 8px;
+    color: black;
+    background-color: rgb(255, 0, 106);
+}
+
+.container-fluid form{
+    margin: 50px 10px 10px 30px;
+    color: white;
+}
+
+.container-fluid form h2{
+    color: white;
+    font-weight: bold; 
+    display: inline;
+}
+
+.container-fluid form button{
+    float: right;
+    margin-bottom: 15px;
+    background-color: white;
+    color: black;
+}
+
+.canvas .navbar-brand{
+  line-height: 50px;
+  font-weight: 1000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.container-fluid .row img{
+  width: 100%;
+  height: 80vh;
+}
+
+.container-fluid i{
+  margin-bottom: 30px;
+  color: black;
+  background-color: white;
+  /* height: 30px;
+  width: 50px; */
+  line-height: 28px;
+  padding: 10px;
+  margin-left: 320px;
+}
+
+.radio{
+  margin-top: 30px;
+}
+
+   
+    </style>
+  </head>
+  <body>
+   <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid canvas">
+      <a class="navbar-brand" href="#">
+        <img src="https://images.unsplash.com/photo-1600408942710-9e0ccfe941c2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aGVhcnQlMjBpbiUyMGhhbmR8ZW58MHwyfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+        alt=""  height = "50px" width = "70px" class="d-inline-block align-top">
+        canvas
+      </a>
+
+        <div id="header">
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                    <a href="#about">ABOUT US</a>
+                    <a href="#team">DEPARTMENT</a>
+                    <a href="#tech">DOCTOR</a>
+                    <a href="#tech">BLOG</a>
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-5" style="background-color:pink;">
+        <img src="https://images.unsplash.com/photo-1576765974102-b756026ecee3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvY3RvciUyMHBhdGllbnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-7" style="background-color:rgb(255, 0, 106);;">
+        <form>
+            <h2>Book an Appointment.</h2>
+            <i class="fa fa-cogs"></i>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                  <label>Name</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Phone</label>
+                  <input type="number" class="form-control">
+                </div>
+              </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-8">
+                <label>Email Address</label>
+                <input type="email" class="form-control">
+              </div>
+              <div class="form-group col-md-4">
+                <label>Date of Birth</label>
+                <input type="number" class="form-control" placeholder="DD/MM/YY">
+              </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <div class="form-row" style="width: 350px;">
+                    <label>Appointment Date</label>
+                    <input type="number" class="form-control" placeholder="DD/MM/YY">
+                  </div>
+
+                  <div class="form-row radio">
+                    <label>Booked with us before?</label>
+                    <br> <br><br><br>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">YES
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">No
+                      </label>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label>Message</label>
+                  <!-- <input type="text"> -->
+                  <textarea name="message" class="form-control" rows="5"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Confirm Booking</button>
+          </form>
+      </div>
+    </div>
+  </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
